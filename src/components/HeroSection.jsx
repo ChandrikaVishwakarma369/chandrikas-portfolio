@@ -56,13 +56,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 sm:gap-2">
-        <span className="text-[8px] sm:text-[10px] text-gray-500 tracking-[0.3em] uppercase">
-          Scroll
-        </span>
-        <div className="w-px h-10 sm:h-12 bg-gradient-to-b from-cyan-400 to-transparent" />
-      </div>
+      {/* ❌ Scroll Indicator removed */}
+      
     </section>
   );
 };

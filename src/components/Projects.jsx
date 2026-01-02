@@ -1,8 +1,17 @@
 import React from "react";
 import flavoroImage from "../assets/flavoro.jpg";
 import spotifyImage from "../assets/spotify.jpg";
+import lavendryImage from "../assets/lavendry_.jpg"; // 👉 add your Lavendry image in assets
 
 const projects = [
+  {
+    title: "Lavendry",
+    desc: "A modern e-commerce web application for beauty and makeup products with cart system, product filtering and responsive UI.",
+    image: lavendryImage,
+    live: "https://lavendry-web.vercel.app/",   // change if different
+    github: "https://github.com/ChandrikaVishwakarma369/lavendry",
+    tech: ["React", "Context API", "Tailwind", "React Router"],
+  },
   {
     title: "DSAnify",
     desc: "An interactive DSA learning platform with quizzes, visualizations and animated coding solutions.",
