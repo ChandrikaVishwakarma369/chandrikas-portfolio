@@ -1,7 +1,9 @@
 import React from "react";
 import flavoroImage from "../assets/flavoro.jpg";
+import sbms from "../assets/sbms.png";
+import propertEase from "../assets/propertEase.avif";
 import spotifyImage from "../assets/spotify.jpg";
-import lavendryImage from "../assets/lavendry_.jpg"; // 👉 add your Lavendry image in assets
+import lavendryImage from "../assets/lavendry_.jpg";
 
 const projects = [
   {
@@ -25,7 +27,7 @@ const projects = [
     desc: "A modern food ordering web app with filters, cart system and responsive UI.",
     image: flavoroImage,
     live: "https://flavoro-web-app.vercel.app/",
-    github: "#",
+    github: "https://github.com/ChandrikaVishwakarma369/flavoro-web-app",
     tech: ["React", "Redux", "Tailwind"],
   },
   {
@@ -33,8 +35,24 @@ const projects = [
     desc: "Spotify clone where I used HTML and CSS for frontend design.",
     image: spotifyImage,
     live: "https://spotify-clone-psi-seven-85.vercel.app/",
-    github: "#",
+    github: "https://github.com/ChandrikaVishwakarma369/Spotify-Clone",
     tech: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "SBMS",
+    desc: "a web-based application designed to streamline business operations by managing customers, products, inventory, sales, orders, and employee records.",
+    image: sbms,
+    live: "https://sbms-gold.vercel.app/login",
+    github: "https://github.com/ChandrikaVishwakarma369/sbms-frontend",
+    tech: ["MONGODB", "EXPRESS JS", "REACT JS", "NODE JS", "TAILWIND CSS"],
+  },
+  {
+    title: "propertEase",
+    desc: "A full-stack real estate web application for buying, selling, and renting properties with secure user authentication.",
+    image: propertEase,
+    live: "#",
+    github: "https://github.com/scriptscholars-admin/PropertEase-FrontEnd",
+    tech: ["MONGODB", "EXPRESS JS", "REACT JS", "NODE JS", "TAILWIND CSS"],
   },
 ];
 
@@ -61,7 +79,10 @@ const Projects = () => {
             </div>
 
             {/* Content */}
-            <div className="p-6 flex flex-col h-full">
+            <div
+              key={i}
+              className="bg-[#0b0b0b] rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-2"
+            >
               <h3 className="text-2xl font-semibold text-white mb-3">
                 {project.title}
               </h3>
@@ -81,20 +102,6 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-
-              {/* Live link text */}
-              {project.live !== "#" && (
-                <p className="text-cyan-400 text-sm mb-2">
-                  Live Link:{" "}
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="underline"
-                  >
-                    Click Here
-                  </a>
-                </p>
-              )}
 
               {/* Buttons */}
               <div className="mt-auto flex gap-4">
