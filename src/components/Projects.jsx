@@ -1,7 +1,7 @@
 import React from "react";
 import flavoroImage from "../assets/flavoro.jpg";
 import sbms from "../assets/sbms.png";
-import propertEase from "../assets/propertEase.avif";
+import propertEase from "../assets/propertease.avif";
 import spotifyImage from "../assets/spotify.jpg";
 import lavendryImage from "../assets/lavendry_.jpg";
 
