@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "SBMS",
-    desc: "a web-based application designed to streamline business operations by managing customers, products, inventory, sales, orders, and employee records.",
+    desc: "a web-based application designed to streamline business operations by managing customers, products, inventory, sales, orders, and employee records. Credentials - email : test@gmail.com, password : test@123",
     image: sbms,
     live: "https://sbms-gold.vercel.app/login",
     github: "https://github.com/ChandrikaVishwakarma369/sbms-frontend",

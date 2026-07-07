@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import profileImage1 from "../assets/myimgclg.jpeg"; // Replace with your image path
 import profileImage2 from "../assets/myImgrest.jpeg"; // Replace with your image path
-import profileImage3 from "../assets/MyImg.jpeg"; // Replace with your image path
+import profileImage3 from "../assets/myphotoai.jpeg"; // Replace with your image path
 import profileImage4 from "../assets/myImgGemini.jpeg"; // Replace with your image path
 
 const HeroSection = () => {
